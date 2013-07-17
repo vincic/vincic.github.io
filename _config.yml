@@ -1,15 +1,15 @@
-title:            Site Title
+title:            Sasha Vincic
 description:      Describe your website here.
 logo:             site-logo.png
 disqus_shortname: 
 #Comment out url when working locally to resolve base urls correctly
-url:              http://your-website.com
+url:              http://vincic.github.io
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Sasha Vincic
   avatar:         bio-photo.jpg
-  email:          you@email.com
+  email:          sasha@vincic.org
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
