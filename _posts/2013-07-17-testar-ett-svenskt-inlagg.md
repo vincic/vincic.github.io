@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testar ett svenskt inlagg
+title: Testar ett svenskt inlägg
 ---
 Från Evernote
 
