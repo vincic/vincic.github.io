@@ -1,25 +1,25 @@
 title:            Sasha Vincic
-description:      Describe your website here.
+description:      My notes about work, security and internet of things. 
 logo:             site-logo.png
-disqus_shortname: 
+disqus_shortname: vincic
 #Comment out url when working locally to resolve base urls correctly
 #url:              http://vincic.github.io
 
 # Owner/author information
 owner:
   name:           Sasha Vincic
-  avatar:         bio-photo.jpg
+  avatar:         http://www.gravatar.com/avatar/c98818113e6d383bde6dbcc463681414.png
   email:          sasha@vincic.org
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  linkedin:       
-  instagram:      
-  flickr:         
+  twitter:        vincic
+  facebook:       sashavincic
+  github:         vincic
+  linkedin:       sashav
+  instagram:      vincic
+  flickr:         sashav
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:    //plus.google.com/110531523203599907630
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-1635911-2
@@ -32,6 +32,8 @@ bing_verify:
 links:
   - title: Blog
     url: /blog
+  - title: Internet of Things
+    url: /internet-of-things
   - title: Photos
     url: http://www.flickr.com/photos/sashav
     external: true
