@@ -30,6 +30,8 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
+  - title: Home
+    url: /
   - title: Blog
     url: /blog
   - title: Internet of Things
@@ -40,6 +42,8 @@ links:
   - title: LinkedIn
     url: http://www.linkedin.com/in/sashav
     external: true
+  - title: About
+    url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Stockholm
