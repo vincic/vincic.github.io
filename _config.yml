@@ -36,12 +36,6 @@ links:
     url: /blog
   - title: Internet of Things
     url: /internet-of-things
-  - title: Photos
-    url: http://www.flickr.com/photos/sashav
-    external: true
-  - title: LinkedIn
-    url: http://www.linkedin.com/in/sashav
-    external: true
   - title: About
     url: /about
 
