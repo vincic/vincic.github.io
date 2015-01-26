@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hackaton of the Hackatons - Snow Sprint
-tags: [hackaton,snowsprint, crate, cenito]
+tags: [hackaton, jobbavarduvill, crate, cenito]
 date: 2015/01/26
 comments: true
 permalink: /blog/2015/01/snowsprint-hackaton
