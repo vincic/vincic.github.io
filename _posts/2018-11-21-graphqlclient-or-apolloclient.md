@@ -3,7 +3,7 @@ layout: post
 title: GraphQLClient or ApolloClient?
 tags: [development]
 date: 2018/11/20
-comments: false
+comments: true
 permalink: /blog/2018/11/graphqlclient-or-apolloclient
 ---
 GraphQL is on everyone's mind these days, mine too. Right now working with NestJS and GraphQL where the backen will stitch together several GraphQL schemas and REST APIs. Different systems have responsibility for different part of a type's properties. 
