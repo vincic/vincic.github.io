@@ -8,6 +8,8 @@ permalink: /blog/2018/11/is-your-ide-remote-safe
 ---
 Most of the developer use a laptop like a MacBook Pro as their primary development machine. They have all their email, documents, photos and code on it. The environment is correctly set up with *git*, *Visual Code* or *Emacs*. (yeah there are other editors but these I use :) This at least how I worked when I had one computer. These days I use multiple computers every day.
 
+<img src="/images/emacs-world.jpg" width="100%">
+
 # Emacs and TRAMP mode
 As soon as you start working remotely where you have to connect to remote computers to use their services or access your code on the remote machine, it gets tricky. This year I tried to use Visual Code (I still use it more and more, still learning) but I always tend to switch back to Emacs which has been my main editor since 1993. The main reason is the shortcuts are in my genes now but also when I try to navigate the remote code.
 
