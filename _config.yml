@@ -3,7 +3,7 @@ description:      My notes about work, security and internet of things.
 logo:             site-logo.png
 disqus_shortname: vincic
 #Comment out url when working locally to resolve base urls correctly
-#url:              http://sasha.vincic.org
+url:              https://sasha.vincic.org
 
 # Owner/author information
 owner:
