@@ -1,0 +1,60 @@
+paths:
+  uploads: uploads
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  posts:
+    path: _posts
+    output: true
+    icon: notes
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  pages:
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+_select_data:
+  owner:
+    name: Sasha Vincic
+    avatar: http://www.gravatar.com/avatar/c98818113e6d383bde6dbcc463681414.png
+    email: sasha@vincic.org
+    twitter: vincic
+    facebook: sashavincic
+    github: vincic
+    linkedin: sashav
+    instagram: vincic
+    flickr: sashav
+    tumblr:
+    google_plus: //plus.google.com/110531523203599907630
+  links:
+    - title: Home
+      url: /
+    - title: Blog
+      url: /blog/
+    - title: About
+      url: /about/
+_structures: {}
+_editables: {}
+data_config: {}
+timezone: Europe/Stockholm
