@@ -1,7 +1,7 @@
 ---
 layout: post
 category: blog
-tags: [apple, location, övervakning, säkerhet, transparens]
+tags: [security]
 date: 2011/04/21 01:00:00
 title: Övervakaren Apple är avslöjad
 permalink: /sv/blog/2011/04/övervakaren-apple-är-avslöjad

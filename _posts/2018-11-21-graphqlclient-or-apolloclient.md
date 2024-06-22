@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GraphQLClient or ApolloClient?
-tags: [development]
+tags: [code]
 date: 2018/11/20
 comments: true
 permalink: /blog/2018/11/graphqlclient-or-apolloclient

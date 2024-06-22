@@ -2,7 +2,7 @@
 layout: post
 title: "SSWC + Ung Cancer = sängplats över" 
 description: "SSWC - där de som ger är hjältar"
-tags: [sswc, havskampen, ungcancer]
+tags: [sswc]
 modified: 2013-07-29
 image:
   feature: sswc-bastuflotte.png

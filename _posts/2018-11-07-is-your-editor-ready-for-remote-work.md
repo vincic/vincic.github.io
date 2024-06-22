@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is your code editor ready for remote work?
-tags: [development]
+tags: [code, remote work]
 date: 2018/11/07
 comments: false
 permalink: /blog/2018/11/is-your-ide-remote-safe

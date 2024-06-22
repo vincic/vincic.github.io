@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time for change - Starting new company
-tags: [startup, workanywhere]
+tags: [startup]
 date: 2016/05/24
 comments: true
 image:

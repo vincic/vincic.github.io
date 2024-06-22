@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [skabersjövillan,skabersjö, kontor, paradiset]
+tags: [remote work]
 date: 2014/06/09 15:20
 title: Skabersjövillan, ett kontor i paradiset
 image:

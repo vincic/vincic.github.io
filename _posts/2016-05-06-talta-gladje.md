@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tälta är glädje - Häckeberga
-tags: [skabersjovillan, skåne]
+tags: [skåne]
 date: 2016/05/06
 comments: true
 permalink: /blog/2016/05/gladja-talta

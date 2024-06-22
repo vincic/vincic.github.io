@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [framtid, kunskapssamhälle, kompetens] 
+tags: [event] 
 date: 2011/04/08 23:34:00
 title: Kunskapen är större utanför Sverige
 permalink: /sv/blog/2011/04/kunskapen-är-större-utanför-sverige

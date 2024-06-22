@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [microconf, startup, hackernytt]
+tags: [startup, event]
 date: 2014/10/31 08:10
 title: Microconf och HackerNytt
 permalink: /sv/blog/2014/10/microconf-hackernytt

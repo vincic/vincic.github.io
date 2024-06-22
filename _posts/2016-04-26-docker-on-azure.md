@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker on Azure - an introduction at Malmö Docker Meetup
-tags: [presentation]
+tags: [event]
 date: 2016/04/26
 comments: true
 permalink: /blog/2016/04/docker-on-azure

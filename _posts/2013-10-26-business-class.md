@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SAS Business Class
-tags: [flyg,business class,sas,shanghai]
+tags: [travel]
 date: 2013/10/26
 comments: true
 permalink: /blog/2013/10/sas-business-class

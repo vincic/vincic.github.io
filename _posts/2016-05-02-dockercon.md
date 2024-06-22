@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DockerCon 2016
-tags: [docker]
+tags: [event]
 date: 2016/05/02
 comments: true
 permalink: /blog/2016/05/dockercon

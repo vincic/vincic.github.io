@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal MeetUp i Malmö
-tags: [drupal,meetup,open source]
+tags: [event,open source]
 date: 2014/04/23
 comments: true
 permalink: /blog/2014/04/drupal-meetup
