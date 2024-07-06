@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [code, productivity]
+tags: [code, productivity, git, version control]
 date: 2024/06/27 07:10:00
 title: 'Mastering git commit message: the "why"'
 comments: true
