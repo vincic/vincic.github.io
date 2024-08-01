@@ -1,7 +1,7 @@
 ---
 comments: true
 layout: post
-tags: [AI, Coding, Emacs, LLM]
+tags: [AI, coding, Emacs, LLM]
 date: 2024/07/16
 title: "Exploring selfhosted AI-Augmented coding"
 permalink: /blog/2024/07/16/exploring-selfhosted-ai-augmented-coding
