@@ -8,7 +8,7 @@ permalink: /blog/2024/07/recreating-emacs-config
 
 Thanks to [@aclonegeek](https://github.com/aclonegeek) and his amazing [Emacs configuration](https://github.com/aclonegeek/.emacs.d), I have successfully recreated my entire Emacs setup. Copied with pride, this configuration is incredibly clean and fast with Emacs 31!
 
-One of the most streamlined setups I have come across, it is not just mine but a testament to Randy's impeccable work. If you are looking to enhance your Emacs experience, I highly recommend checking out his [init.el file](https://github.com/aclonegeek/.emacs.d/init.el).
+One of the most streamlined setups I have come across, it is not just mine but a testament to Randy's impeccable work. If you are looking to enhance your Emacs experience, I highly recommend checking out his [init.el file](https://github.com/aclonegeek/.emacs.d/blob/master/init.el).
 
 From more than 600 rows of unstructured and copy-pasted code, my init file now looks like this:
 
