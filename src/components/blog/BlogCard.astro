@@ -1,0 +1,19 @@
+---
+import { postDate, postImage, postTags, postUrl } from '@/lib/posts';
+const { post, large = false } = Astro.props;
+const image = postImage(post);
+const tags = postTags(post).slice(0, 3);
+---
+<article class:list={["group border-t border-base-200 py-6", large && "md:grid md:grid-cols-[1.1fr_.9fr] md:gap-10"]}>
+  <div>
+    <p class="mb-3 text-xs uppercase tracking-wide text-base-500">
+      <time datetime={postDate(post).toISOString()}>{postDate(post).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: '2-digit' })}</time>
+    </p>
+    <h2 class:list={["font-serif font-light tracking-tight text-base-950 group-hover:opacity-70", large ? "text-4xl md:text-5xl" : "text-2xl"]}>
+      <a href={postUrl(post)}>{post.data.title}</a>
+    </h2>
+    {post.data.description && <p class="mt-4 max-w-2xl text-base-600 leading-7">{post.data.description}</p>}
+    {tags.length > 0 && <p class="mt-4 text-xs uppercase tracking-wide text-base-500">{tags.join(' · ')}</p>}
+  </div>
+  {image && <a href={postUrl(post)} class="mt-6 block overflow-hidden bg-base-100 md:mt-0"><img src={image} alt="" loading="lazy" class="aspect-[4/3] h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]" /></a>}
+</article>

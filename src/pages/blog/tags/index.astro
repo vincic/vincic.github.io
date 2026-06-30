@@ -1,0 +1,10 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '@/layouts/SiteLayout.astro';
+import { postTags } from '@/lib/posts';
+const posts = await getCollection('posts');
+const tags = [...new Set(posts.flatMap(postTags))].sort((a, b) => a.localeCompare(b));
+---
+<SiteLayout title="Tags">
+  <section class="mx-auto max-w-4xl px-5 py-20"><h1 class="font-serif text-6xl font-light">Tags</h1><div class="mt-10 flex flex-wrap gap-3">{tags.map((tag) => <a class="rounded-full border border-base-300 px-4 py-2 text-sm hover:border-base-950" href={`/blog/tags/${encodeURIComponent(tag)}/`}>{tag}</a>)}</div></section>
+</SiteLayout>

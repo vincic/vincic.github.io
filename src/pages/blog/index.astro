@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '@/layouts/SiteLayout.astro';
+import BlogCard from '@/components/blog/BlogCard.astro';
+import { sortedPosts } from '@/lib/posts';
+const posts = sortedPosts(await getCollection('posts'));
+---
+<SiteLayout title="Writing" description="Writing by Sasha Vinčić on AI, software engineering, work, and technical leadership.">
+  <section class="mx-auto max-w-6xl px-5 py-20">
+    <p class="mb-5 text-sm uppercase tracking-[0.25em] text-base-500">Writing</p>
+    <h1 class="font-serif text-6xl font-light tracking-tight md:text-7xl">Notes, essays, and technical archaeology.</h1>
+    <div class="mt-14">
+      {posts.map((post, index) => <BlogCard post={post} large={index === 0} />)}
+    </div>
+  </section>
+</SiteLayout>

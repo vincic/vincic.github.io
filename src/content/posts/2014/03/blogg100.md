@@ -1,0 +1,12 @@
+---
+title: "Blogg100"
+description: "Att följa Blogg100 flödet på Facebook och på Twitter ger mig en otrolig kick. Det är tredje året i rad som Fredrik Wass drar igågng utmaningen. Själv har jag..."
+pubDate: "2014-03-01"
+updatedDate: "2014-03-01"
+heroImage: "/images/blogg100.jpg"
+author: "sasha"
+tags: []
+---
+
+Att följa <a href="http://bisonblog.se/blogg100/">Blogg100</a> flödet på <a href="https://www.facebook.com/hashtag/blogg100?source=feed_text">Facebook</a> och på <a href="https://twitter.com/search?q=%23blogg100&src=tyah&f=realtime">Twitter</a> ger mig  en otrolig kick. Det är tredje året i rad som Fredrik Wass drar igågng utmaningen. Själv har jag varit sugen på att hoppa på innan men aldrig gjort det då jag aldrig bloggat ordentligt. Förra året lyckades jag få ut några blogginlägg och insåg att det var inte så farligt.
+I år deltar jag i Blogg1000 via <a href="http://wearepropeople.se/blog" title="Propeople - Drupalbyrå">Propeople</a> där jag jobbar idag. Det ska bli kul att få blogga om det jag tycker är kul och jobbar till vardags. Om jag hinner att få ut något här får vi se.
