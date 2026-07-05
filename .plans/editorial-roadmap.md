@@ -6,6 +6,30 @@ This document separates editorial strategy from the implementation PRD for `sash
 
 The site repositioning release should make the homepage, About, Work, Contact, and Blog structure clearer. This roadmap decides what to do with existing articles and what Sasha should write next.
 
+
+## Implementation Sequence
+
+Do this in phases:
+
+1. **Archive first**
+   - Hide obvious legacy/draft-quality posts from default browsing using `archived: true`.
+   - Keep direct URLs buildable.
+   - Do not delete or consolidate yet.
+
+2. **Prepare GitHub Pages deployment**
+   - Make the Astro site ready to replace the current Jekyll implementation in `vincic/vincic.github.io`.
+   - Preserve custom domain support with `public/CNAME`.
+   - Add the GitHub Actions Pages deployment workflow described in `.plans/github-pages-deployment-plan.md`.
+
+3. **Publish the repositioned site**
+   - Deploy the current cleaned-up site first.
+   - Verify homepage, Blog, RSS, direct archived URLs, and custom domain.
+
+4. **Editorial consolidation after publishing**
+   - Only after the new site is live, start consolidating overlapping articles into stronger essays.
+   - Do not redirect/delete old articles until the replacement article exists and has been reviewed.
+
+
 ## Editorial Positioning
 
 `sasha.vincic.org` is Sasha's personal/professional identity site.
@@ -245,9 +269,11 @@ Initial archive candidates:
 15. `2024/07/unplugged-thoughts.md`
     - Personal note; can be hidden for now.
 
-These may be deleted later after review.
+These may be deleted later after review, but the next step is archive-only. Do not delete or consolidate these before the GitHub Pages migration is live.
 
 ## Existing Posts: Later Update / Consolidation Ideas
+
+These are intentionally **post-publication** tasks. First archive and deploy the cleaned-up site. Then consolidate overlapping posts into stronger new articles.
 
 ### AI posts
 

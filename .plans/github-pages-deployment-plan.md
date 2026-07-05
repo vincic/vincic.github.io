@@ -20,6 +20,15 @@ Move the new Astro-based `sasha.vincic.org` site to GitHub and have GitHub Pages
   - `astro.config.mjs` with `site: 'https://sasha.vincic.org'`
   - `public/CNAME` with `sasha.vincic.org`
 
+## Scope order
+
+Before replacing the GitHub Pages deployment, finish the archive-first cleanup:
+
+- archived posts stay buildable at their direct URLs,
+- archived posts are excluded from Blog, tag pages, homepage, and RSS,
+- no consolidation redirects are required for the first GitHub Pages migration,
+- article consolidation starts only after the new Astro site is live.
+
 ## Recommended approach
 
 Use `vincic/vincic.github.io` as the canonical GitHub Pages source repository for the new Astro site.
@@ -122,13 +131,17 @@ Important: do not copy build artifacts or local dependency folders.
 
 ### 5. Add GitHub Actions Pages workflow
 
-Create `.github/workflows/deploy.yml`:
+Implemented in this repo as `.github/workflows/deploy.yml`. It builds pull requests without deploying, and deploys pushes to `master` once this source is copied to `vincic/vincic.github.io`.
+
+Workflow content:
 
 ```yaml
 name: Deploy Astro site to GitHub Pages
 
 on:
   push:
+    branches: [master]
+  pull_request:
     branches: [master]
   workflow_dispatch:
 
@@ -161,11 +174,13 @@ jobs:
         run: npm run build
 
       - name: Upload Pages artifact
+        if: github.event_name != pull_request
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    if: github.event_name != pull_request
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -216,6 +231,7 @@ Review checklist:
 - Old Jekyll files removed.
 - Astro source present.
 - `public/CNAME` present.
+- `public/.nojekyll` present so GitHub Pages never treats the artifact as Jekyll.
 - `.github/workflows/deploy.yml` present.
 - `npm run build` passes locally.
 - No `node_modules`, `dist`, `.astro`, or private files committed.

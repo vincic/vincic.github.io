@@ -533,6 +533,7 @@ Include:
 8. `archived: true` support for visibility filtering.
 9. Initial archiving of obvious legacy posts.
 10. RSS/tag exclusion for archived posts.
+11. GitHub Pages preparation for replacing `vincic/vincic.github.io`: workflow, CNAME, `.nojekyll`, and migration plan.
 
 Exclude:
 
@@ -556,3 +557,4 @@ Exclude:
 8. Blog archive / all posts: group by year and show only date plus title.
 9. Archived posts: exclude from homepage, Blog index, tag pages, and RSS; keep direct URLs buildable for now.
 10. `/archive/` page: not part of this release; revisit only if direct-link-only archived posts become hard to manage.
+11. Editorial sequence: archive first, prepare and publish GitHub Pages migration second, consolidate articles only after the new site is live.
