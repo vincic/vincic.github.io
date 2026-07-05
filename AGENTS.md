@@ -1,3 +1,29 @@
+# Project workflow overrides — sasha.vincic.org
+
+This repository is Sasha's personal site. Treat the GitLab and GitHub copies as the same project with two remotes:
+
+- `origin` → GitLab: working/collaboration remote.
+- `github` → GitHub Pages: production deployment remote.
+
+Branch policy:
+
+- Keep only `master` on GitLab and GitHub unless a task explicitly needs a temporary branch.
+- GitHub should receive **only `master`**. Do not push article drafts, feature branches, or review branches to GitHub.
+- New articles/content work should happen in a draft branch or a separate branch per article, for example `draft/<article-slug>` or `article/<article-slug>`.
+- Draft/article branches may be pushed to GitLab for review and iteration.
+- When Sasha is happy with the article, merge it to `master`, run the build, push `master` to GitLab, then push `master` to GitHub for deployment.
+- Do not commit private infrastructure metadata such as Tailscale hostnames or 100.x tailnet IPs. Use local environment or ignored local config for dev-only hostnames.
+
+Deployment checks before pushing `master` to GitHub:
+
+```bash
+npm run build
+git diff --check
+git push --dry-run github master
+```
+
+---
+
 # AGENTS.md — Hemingway (Lexington Themes)
 
 **Publisher:** [Lexington Themes](https://lexingtonthemes.com/). This file describes **this repo only** (`@lexington/hemingway`).
