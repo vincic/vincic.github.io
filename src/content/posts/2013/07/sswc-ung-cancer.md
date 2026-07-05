@@ -6,6 +6,7 @@ updatedDate: "2013-07-29"
 heroImage: "/images/sswc-bastuflotte.png"
 tags: ["sswc"]
 author: "sasha"
+archived: true
 ---
 
 Jag har varit med på Sweden Social Web Camp alla åren, varit där i kulisserna, lyssnat och bidragit på mitt tysta sätt. Första året som sponsor via mitt egna företag och detta året som sponsor från [Propeople,en digital byrå](http://wearepropeople.se/) och som privatperson där jag och min son ska bo på [T/S Britta](https://www.facebook.com/TSBritta?directed_target_id=121631981261066) och alla våra pengar går till [Ung cancer](https://www.facebook.com/ungcancer?directed_target_id=121631981261066) via projektet HavsKampen.

@@ -4,6 +4,7 @@ description: "Who needs Valhalla when you've got 5G by the sea, a feast fit for 
 pubDate: "2024-07-21"
 tags: ["roadtrip"]
 author: "sasha"
+archived: true
 ---
 
 Who needs Valhalla when you've got 5G by the sea, a feast fit for kings, and a sunset cinema in your Tesla? This, fellow Vikings, is how you kick off a raid—I mean, roadtrip. Modern tech meets ancient pleasures in a perfect storm of experience.

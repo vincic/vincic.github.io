@@ -4,6 +4,7 @@ description: "Simplicity liberates."
 pubDate: "2024-08-05"
 tags: ["mindset", "focus", "personal growth"]
 author: "sasha"
+archived: true
 ---
 
 Simplicity liberates.

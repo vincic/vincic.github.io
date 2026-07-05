@@ -4,6 +4,7 @@ description: "Att sitta längst fram i flyget på en långdistans har varit en a
 pubDate: "2013-10-26"
 tags: ["travel"]
 author: "sasha"
+archived: true
 ---
 
 Att sitta längst fram i flyget på en långdistans har varit en av önskedrömmar och igår blev den verklighet. Vi fick vår uppgradering till Business Class på Airbus 340 till Shanghai med SAS. Jag och Murrat sat längst fram och och verkligen njöt av varenda bit. Det var en underbar känsla att känna barnglädjen över att få saker som man önskat sig länge.

@@ -1,0 +1,11 @@
+---
+import { postDate, postUrl } from '@/lib/posts';
+const { post } = Astro.props;
+const date = postDate(post);
+---
+<article class="group border-t border-base-200 py-3 last:border-b sm:flex sm:items-baseline sm:gap-5">
+  <time class="block shrink-0 font-mono text-xs text-base-500 sm:w-24" datetime={date.toISOString()}>{date.toLocaleDateString('en-GB', { month: 'short', day: '2-digit' })}</time>
+  <h3 class="mt-1 font-serif text-xl font-light leading-snug tracking-tight text-base-950 group-hover:opacity-70 sm:mt-0 md:text-2xl">
+    <a href={postUrl(post)}>{post.data.title}</a>
+  </h3>
+</article>

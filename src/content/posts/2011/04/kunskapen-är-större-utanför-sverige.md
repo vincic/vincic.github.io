@@ -4,6 +4,7 @@ description: "Troed Troedson är en underhållande och smart man. Idag höll han
 pubDate: "2011-04-08"
 tags: ["event"]
 author: "sasha"
+archived: true
 ---
 
 Troed Troedson är en underhållande och smart man. Idag höll han ett presentation på HiQs vårfest om kunskapssamhället och kompetens.

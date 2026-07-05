@@ -1,10 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '@/layouts/SiteLayout.astro';
-import BlogCard from '@/components/blog/BlogCard.astro';
+import BlogTextRow from '@/components/blog/BlogTextRow.astro';
 import { postTags, sortedPosts } from '@/lib/posts';
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
+  const posts = sortedPosts(await getCollection('posts'));
   const tags = [...new Set(posts.flatMap(postTags))];
   return tags.map((tag) => ({ params: { tag }, props: { tag } }));
 }
@@ -12,5 +12,9 @@ const { tag } = Astro.props;
 const posts = sortedPosts(await getCollection('posts')).filter((post) => postTags(post).includes(tag));
 ---
 <SiteLayout title={`Tag: ${tag}`}>
-  <section class="mx-auto max-w-6xl px-5 py-20"><p class="mb-5 text-sm uppercase tracking-[0.25em] text-base-500">Tag</p><h1 class="font-serif text-6xl font-light">{tag}</h1><div class="mt-12">{posts.map((post) => <BlogCard post={post} />)}</div></section>
+  <section class="mx-auto max-w-6xl px-5 py-20">
+    <p class="mb-5 text-sm uppercase tracking-[0.25em] text-base-500">Tag</p>
+    <h1 class="font-serif text-6xl font-light">{tag}</h1>
+    <div class="mt-12">{posts.map((post) => <BlogTextRow post={post} />)}</div>
+  </section>
 </SiteLayout>

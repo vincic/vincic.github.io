@@ -5,6 +5,7 @@ pubDate: "2011-04-21"
 heroImage: "/images/iphonetracker.png"
 tags: ["security"]
 author: "sasha"
+archived: true
 ---
 
 Via Twitter och Facebook har jag idag blivit upplyst om verktyget <a href="http://petewarden.github.com/iPhoneTracker/">iPhoneTracker</a> vilket var ett riktigt coolt verktyg. Det visar exakt var jag/min iPhone har befunnits sig de senaste åren.

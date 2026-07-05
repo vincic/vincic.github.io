@@ -4,6 +4,7 @@ description: "Screens. The modern Viking's kryptonite."
 pubDate: "2024-07-20"
 tags: ["continous3 improvement", "ai", "productivity"]
 author: "sasha"
+archived: true
 ---
 
 Screens. The modern Viking's kryptonite.

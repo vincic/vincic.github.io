@@ -4,6 +4,7 @@ description: "En solig och kall dag värmdes upp av vinterminglet med tre höjdp
 pubDate: "2011-02-20"
 tags: ["event"]
 author: "sasha"
+archived: true
 ---
 
 En solig och kall dag värmdes upp av vinterminglet med tre höjdpunkter och en oförberedd och jetlaggad Johan von Holstein. Jag anlände perfekt till SSMX att få höra herr Johan Ronnestam berätta om framtiden på ett intressant och roligt sätt som vanligt. Gillade verkligen det där med att banker, bilar och gymmaskiner uppkopplade till Facebbook och jag fick mig en tankeställare på hur digitalisering och globalisering kan tömma ett land på företag och kunskap om man inte vågar satsa i tid.

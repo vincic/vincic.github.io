@@ -1,0 +1,17 @@
+---
+import { postDate, postImage, postUrl } from '@/lib/posts';
+const { post, defaultImage } = Astro.props;
+const image = postImage(post) ?? defaultImage;
+---
+<article class="group overflow-hidden border border-base-200 bg-white">
+  {image && <a href={postUrl(post)} class="block overflow-hidden bg-base-100"><img src={image} alt="" loading="lazy" class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.02]" /></a>}
+  <div class="p-5">
+    <p class="text-xs uppercase tracking-[0.16em] text-base-500">
+      <time datetime={postDate(post).toISOString()}>{postDate(post).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: '2-digit' })}</time>
+    </p>
+    <h3 class="mt-3 font-serif text-2xl font-light leading-tight tracking-tight text-base-950 group-hover:opacity-70">
+      <a href={postUrl(post)}>{post.data.title}</a>
+    </h3>
+    {post.data.description && <p class="mt-3 text-sm leading-6 text-base-650">{post.data.description}</p>}
+  </div>
+</article>

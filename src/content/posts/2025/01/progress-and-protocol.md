@@ -1,10 +1,11 @@
 ---
 title: "Balancing Progress and Protocol"
-description: "Can breaking the rules sometimes be the right thing to do? Is progress more important than strict adherence to protocol? How do we balance individual fairnes..."
+description: "When breaking process helps, when it hurts, and why judgement matters more than rule worship."
 pubDate: "2025-01-02"
 heroImage: "/images/crossroads-protocol-rules.webp"
 tags: ["leadership", "productivity"]
 author: "sasha"
+featured: true
 ---
 
 Can breaking the rules sometimes be the right thing to do?

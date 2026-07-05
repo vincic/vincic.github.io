@@ -4,6 +4,8 @@ description: "Long hours are not always the problem. The wrong work is. Energy i
 pubDate: "2025-07-05"
 tags: ["productivity", "mindset"]
 author: "sasha"
+heroImage: "/images/zone2-jogging.webp"
+featured: true
 ---
 
 Some fourteen-hour work sessions feel light. Some four-hour sessions feel like punishment. That sounds wrong only if you believe hours are the useful unit.

@@ -6,7 +6,7 @@ export async function GET(context) {
   const posts = sortedPosts(await getCollection('posts'));
   return rss({
     title: 'Sasha Vinčić',
-    description: 'Writing by Sasha Vinčić on AI, software engineering, work, and technical leadership.',
+    description: 'Notes by Sasha Vinčić on agentic engineering, software work, founders, and the occasional personal detour.',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

@@ -6,6 +6,7 @@ updatedDate: "2014-03-01"
 heroImage: "/images/blogg100.jpg"
 author: "sasha"
 tags: []
+archived: true
 ---
 
 Att följa <a href="http://bisonblog.se/blogg100/">Blogg100</a> flödet på <a href="https://www.facebook.com/hashtag/blogg100?source=feed_text">Facebook</a> och på <a href="https://twitter.com/search?q=%23blogg100&src=tyah&f=realtime">Twitter</a> ger mig  en otrolig kick. Det är tredje året i rad som Fredrik Wass drar igågng utmaningen. Själv har jag varit sugen på att hoppa på innan men aldrig gjort det då jag aldrig bloggat ordentligt. Förra året lyckades jag få ut några blogginlägg och insåg att det var inte så farligt.

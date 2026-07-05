@@ -1,10 +1,11 @@
 ---
 title: "Boombox bonding: Building with my son and ChatGPT"
-description: "My son and I share a love for the same music and movies - something that makes me want to revisit all my old favorites with him. But, as life goes, those mom..."
+description: "Building a small thing with my son, ChatGPT, and the kind of curiosity that makes technology worth keeping around."
 pubDate: "2025-05-30"
 heroImage: "/images/rpi-spotipy.png"
 tags: ["learning", "code", "problem-solving"]
 author: "sasha"
+featured: true
 ---
 
 My son and I share a love for the same music and movies - something that makes me want to revisit all my old favorites with him. But, as life goes, those moments are rare. Yesterday I asked, *"Wanna watch a movie?"* He replied, *"No, but let's build something together."*

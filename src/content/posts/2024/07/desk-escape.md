@@ -4,6 +4,7 @@ description: "Two more sunsets. 48 hours until liberation."
 pubDate: "2024-07-18"
 tags: ["roadtrip", "remote work"]
 author: "sasha"
+archived: true
 ---
 
 Two more sunsets. 48 hours until liberation.

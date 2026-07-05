@@ -5,6 +5,7 @@ pubDate: "2009-07-24"
 heroImage: "http://farm5.static.flickr.com/4074/4898795613_c211178c1f.jpg"
 tags: ["event"]
 author: "sasha"
+archived: true
 ---
 
 En vecka efter Sweden Social Web Camp, SSWC har jag läst ett antal artiklar om elitism på Tjärö. Det tråkiga är att så fort ordet används utanför sportsammanhang i Sverige får det en negativ klang.

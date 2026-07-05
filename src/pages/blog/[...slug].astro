@@ -2,9 +2,9 @@
 import { getCollection, render } from 'astro:content';
 import SiteLayout from '@/layouts/SiteLayout.astro';
 import BlogCard from '@/components/blog/BlogCard.astro';
-import { imageAppearsInline, postDate, postImage, postTags, sortedPosts } from '@/lib/posts';
+import { buildablePosts, imageAppearsInline, postDate, postImage, postTags, sortedPosts } from '@/lib/posts';
 export async function getStaticPaths() {
-  const posts = sortedPosts(await getCollection('posts'));
+  const posts = buildablePosts(await getCollection('posts'));
   return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 const { post } = Astro.props;
@@ -14,6 +14,7 @@ const related = allPosts.filter((candidate) => candidate.id !== post.id).slice(0
 const image = postImage(post);
 const showHero = image && !imageAppearsInline(post, image);
 const tags = postTags(post);
+const archived = Boolean(post.data.archived);
 ---
 <SiteLayout title={post.data.title} description={post.data.description}>
   <article class="mx-auto max-w-4xl px-5 py-16 md:py-24">
@@ -21,12 +22,12 @@ const tags = postTags(post);
       <p class="text-xs uppercase tracking-[0.25em] text-base-500"><time datetime={postDate(post).toISOString()}>{postDate(post).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: '2-digit' })}</time></p>
       <h1 class="mx-auto mt-6 max-w-4xl font-serif text-5xl font-light leading-tight tracking-tight md:text-7xl">{post.data.title}</h1>
       {post.data.description && <p class="mx-auto mt-8 max-w-2xl text-xl leading-8 text-base-600">{post.data.description}</p>}
-      {tags.length > 0 && <p class="mt-6 text-xs uppercase tracking-wide text-base-500">{tags.map((tag, index) => <><a href={`/blog/tags/${encodeURIComponent(tag)}/`} class="hover:text-base-950">{tag}</a>{index < tags.length - 1 ? ' · ' : ''}</>)}</p>}
+      {tags.length > 0 && <p class="mt-6 text-xs uppercase tracking-wide text-base-500">{tags.map((tag, index) => <>{archived ? <span>{tag}</span> : <a href={`/blog/tags/${encodeURIComponent(tag)}/`} class="hover:text-base-950">{tag}</a>}{index < tags.length - 1 ? ' · ' : ''}</>)}</p>}
     </header>
     {showHero && <img src={image} alt="" class="mx-auto mt-14 max-h-[620px] w-full max-w-3xl object-cover" />}
     <div class:list={["prose prose-lg mx-auto max-w-2xl prose-headings:font-serif prose-headings:font-light prose-a:text-base-950 prose-a:underline hover:prose-a:text-base-700 prose-blockquote:border-l-base-950 prose-blockquote:bg-base-100 prose-blockquote:px-6 prose-blockquote:py-3 prose-img:mx-auto", !showHero && "mt-14 md:mt-16", showHero && "mt-12"]}>
       <Content />
     </div>
   </article>
-  {related.length > 0 && <section class="mx-auto max-w-6xl px-5 py-12 border-t border-base-200"><h2 class="mb-8 font-serif text-4xl font-light">Latest writing</h2>{related.map((item) => <BlogCard post={item} />)}</section>}
+  {related.length > 0 && <section class="mx-auto max-w-6xl px-5 py-12 border-t border-base-200"><h2 class="mb-8 font-serif text-4xl font-light">More from the blog</h2>{related.map((item) => <BlogCard post={item} />)}</section>}
 </SiteLayout>

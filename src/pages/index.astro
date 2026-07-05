@@ -1,32 +1,65 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '@/layouts/SiteLayout.astro';
-import BlogCard from '@/components/blog/BlogCard.astro';
-import { sortedPosts } from '@/lib/posts';
-const posts = sortedPosts(await getCollection('posts')).slice(0, 3);
+import FeaturedPostCard from '@/components/blog/FeaturedPostCard.astro';
+import { featuredPosts } from '@/lib/posts';
+const allPosts = await getCollection('posts');
+const posts = featuredPosts(allPosts).slice(0, 3);
 ---
-<SiteLayout title="Sasha Vinčić" description="AI engineering, software leadership, workshops, writing, and practical technical work by Sasha Vinčić.">
+<SiteLayout title="Sasha Vinčić" description="Sasha Vinčić is a software engineer, founder, and practical AI engineer focused on agentic engineering, AI workshops, and technical judgement.">
   <section class="mx-auto max-w-6xl px-5 py-20 md:py-28">
-    <p class="mb-6 text-sm uppercase tracking-[0.25em] text-base-500">AI engineering · software leadership · workshops</p>
-    <h1 class="max-w-5xl font-serif text-6xl font-light leading-[0.95] tracking-tight text-base-950 md:text-8xl">I help teams turn AI from a demo into working software.</h1>
-    <p class="mt-8 max-w-2xl text-xl leading-8 text-base-650">I am Sasha Vinčić, a software engineer and technical leader in Malmö. I work with AI-assisted engineering, product teams, workshops, and the boring systems work that makes ambitious ideas survive contact with reality.</p>
+    <p class="mb-6 text-sm uppercase tracking-[0.25em] text-base-500">Software engineer · Founder · Practical AI engineer</p>
+    <h1 class="max-w-5xl font-serif text-6xl font-light leading-[0.95] tracking-tight text-base-950 md:text-8xl">Sasha Vinčić</h1>
+    <p class="mt-8 max-w-3xl text-xl leading-8 text-base-650">I am a Malmö-based software engineer, founder, and practical AI engineer focused on agentic engineering, practical AI adoption, and the judgement needed to turn experiments into working systems.</p>
     <div class="mt-10 flex flex-wrap gap-3">
-      <a href="/work/" class="rounded-full bg-base-950 px-5 py-3 text-sm font-medium text-white hover:bg-base-800">Work with me</a>
-      <a href="/blog/" class="rounded-full border border-base-300 px-5 py-3 text-sm font-medium text-base-900 hover:border-base-950">Read writing</a>
+      <a href="/contact/" class="rounded-full bg-base-950 px-5 py-3 text-sm font-medium text-white hover:bg-base-800">Contact me</a>
+      <a href="/blog/" class="rounded-full border border-base-300 px-5 py-3 text-sm font-medium text-base-900 hover:border-base-950">Read the blog</a>
     </div>
   </section>
-  <section class="mx-auto max-w-6xl px-5 py-12 border-t border-base-200">
-    <div class="grid gap-8 md:grid-cols-3">
-      <div><h2 class="font-serif text-3xl font-light">AI, used properly</h2><p class="mt-3 leading-7 text-base-600">Workshops and hands-on engineering for teams that need more than prompt tricks.</p></div>
-      <div><h2 class="font-serif text-3xl font-light">Technical leadership</h2><p class="mt-3 leading-7 text-base-600">25+ years of software engineering, product judgement, code archaeology, and team enablement.</p></div>
-      <div><h2 class="font-serif text-3xl font-light">Useful writing</h2><p class="mt-3 leading-7 text-base-600">Notes on AI, engineering practice, leadership, tools, and the occasional personal detour.</p></div>
+
+  <section class="mx-auto max-w-6xl px-5 py-14 border-t border-base-200">
+    <div class="grid gap-10 md:grid-cols-[0.8fr_1.2fr]">
+      <h2 class="font-serif text-5xl font-light tracking-tight">What I do now</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <article><h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-base-500">AI engineering</h3><p class="mt-3 leading-7 text-base-650">My main work today is as an AI Engineer at Eletive, where the interesting work is not demos but useful systems, safe workflows, and better engineering practice.</p></article>
+        <article><h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-base-500">Workshops</h3><p class="mt-3 leading-7 text-base-650">Through Valentine Web Systems, part-time, I run practical AI workshops and other consulting for teams that want to move from prompting to useful workflows.</p></article>
+        <article><h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-base-500">Useful workflows</h3><p class="mt-3 leading-7 text-base-650">My deepest work is with software teams, but I also help marketing, HR/PX, sales, and leadership teams turn AI from novelty into useful workflows.</p></article>
+        <article><h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-base-500">Digital Viking</h3><p class="mt-3 leading-7 text-base-650">I write and experiment under the Digital Viking name, which is where the technical alter ego and rougher AI/tooling notes belong.</p></article>
+        <article><h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-base-500">Angel investing</h3><p class="mt-3 leading-7 text-base-650">I am learning angel investing with an interest in useful AI, developer tools, boring B2B software, and technical founders.</p></article>
+      </div>
     </div>
   </section>
-  <section class="mx-auto max-w-6xl px-5 py-16">
+
+  <section class="mx-auto max-w-6xl px-5 py-14 border-t border-base-200">
+    <div class="grid gap-10 md:grid-cols-[0.8fr_1.2fr]">
+      <div>
+        <p class="mb-4 text-sm uppercase tracking-[0.25em] text-base-500">About Sasha</p>
+        <h2 class="font-serif text-5xl font-light tracking-tight">I build useful software and help teams make technology less theatrical.</h2>
+      </div>
+      <div>
+        <p class="text-lg leading-8 text-base-650">I have spent more than 25 years building software, leading technical work, starting companies, and helping teams make technology useful. Today my work is centered on agentic engineering, practical AI adoption, and the judgement needed to turn experiments into systems.</p>
+        <div class="mt-8 grid gap-4 text-sm text-base-650 sm:grid-cols-2">
+          <p class="border-t border-base-200 pt-4">25+ years building software through Valentine Web Systems.</p>
+          <p class="border-t border-base-200 pt-4">Senior Software Engineer / AI Engineer at Eletive.</p>
+          <p class="border-t border-base-200 pt-4">CTO and co-founder of Servitant.</p>
+          <p class="border-t border-base-200 pt-4">Systems for Netnod, EEA, Öresundsbron, CADtorget, GameAnalytics, and others.</p>
+        </div>
+        <p class="mt-8"><a href="/about/" class="text-sm font-medium text-base-950 underline decoration-base-300 underline-offset-4 hover:decoration-base-950">More about me →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-5 py-16 border-t border-base-200">
     <div class="mb-8 flex items-end justify-between gap-6">
-      <h2 class="font-serif text-5xl font-light tracking-tight">Latest writing</h2>
-      <a class="text-sm text-base-600 hover:text-base-950" href="/blog/">All posts →</a>
+      <div>
+        <h2 class="font-serif text-5xl font-light tracking-tight">From the blog</h2>
+        <p class="mt-3 max-w-2xl leading-7 text-base-650">Selected notes on agentic engineering, software work, founders, and the occasional personal detour.</p>
+      </div>
+      <a class="hidden text-sm text-base-600 hover:text-base-950 md:block" href="/blog/">Read the blog →</a>
     </div>
-    {posts.map((post, index) => <BlogCard post={post} large={index === 0} />)}
+    <div class="grid gap-5 md:grid-cols-3">
+      {posts.map((post) => <FeaturedPostCard post={post} />)}
+    </div>
+    <p class="mt-8 md:hidden"><a class="text-sm text-base-600 hover:text-base-950" href="/blog/">Read the blog →</a></p>
   </section>
 </SiteLayout>

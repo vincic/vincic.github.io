@@ -4,6 +4,7 @@ description: "It's great to be back at work with recharged batteries after a ref
 pubDate: "2024-08-12"
 tags: ["vacation", "focus", "mindset"]
 author: "sasha"
+archived: true
 ---
 
 It's great to be back at work with recharged batteries after a refreshing vacation. I'm looking forward to an exciting autumn filled with AI advancements and new challenges.

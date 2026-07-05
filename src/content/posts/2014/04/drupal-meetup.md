@@ -5,6 +5,7 @@ pubDate: "2014-04-23"
 heroImage: "/images/drupal-8-logo-isolated.png"
 tags: ["event", "open source"]
 author: "sasha"
+archived: true
 ---
 
 Äntligen var det dax för min första [Drupal MeetUp](http://www.foocafe.org/event/twig-och-drupal-8) här i Malmö. Fast jag har jobbat med öppen källkod i över 15 år och varit på meetups förr var det lite nervöst då jag inte är en Drupalutvecklare. Som säljare och VD för Propeople i Sverige fokuserar jag på det affärsmässiga i Drupal idag och ser väldigt lite kod.
