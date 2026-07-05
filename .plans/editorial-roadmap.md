@@ -47,13 +47,21 @@ Recommended `/blog/` structure:
    - Software craft.
    - Founder notes.
    - Personal field notes.
-3. Text-only chronological list of all public/non-archived posts.
+3. Text-only archive grouped by year, showing only date and title for each public/non-archived post.
 
 Homepage section:
 
 - Title: `From the blog`.
 - Manually selected `featured: true` posts.
 - Small images inside compact cards.
+
+Curated blog sections:
+
+- Selection is manual by post ID, not tag-driven.
+- Each section has a heading and short intro.
+- Cards are text-only: date, title, and intro/description.
+- Do not show tags in the curated cards; the current tag set is too messy to drive the editorial structure.
+- Do not show images in the four curated sections unless we later create a stronger, deliberate visual system.
 
 ## First Featured Homepage Posts
 
@@ -349,7 +357,7 @@ Angle:
 
 ### Founder/angel-investor track
 
-13. **What I look for as an founder learning angel investing**
+13. **What I look for as a founder learning angel investing**
     - Honest and useful.
     - Does not pretend Sasha is a fund.
 
@@ -403,7 +411,7 @@ Angle:
    - Consolidated from existing Git posts.
    - Bridges craft and agentic engineering.
 
-5. **What I look for as an founder learning angel investing**
+5. **What I look for as a founder learning angel investing**
    - New.
    - Supports angel investing angle.
 

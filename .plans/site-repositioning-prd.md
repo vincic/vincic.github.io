@@ -544,10 +544,15 @@ Exclude:
 6. Contact form.
 7. Full taxonomy cleanup.
 
-## Open Questions For Implementation
+## Resolved Implementation Decisions
 
-1. What exact LinkedIn profile URL should be used?
-2. Which existing image is best for each of the first three featured posts?
-3. Should `featured: true` be limited to three posts or allow more with homepage slicing to three?
-4. Should the blog curated sections appear even if a section has no public posts after archiving?
-5. Should an `/archive/` page be added later, or should archived posts stay direct-link only until deletion?
+1. LinkedIn URL: use `https://www.linkedin.com/in/sashav` everywhere.
+2. Email: do not publish email on the site; recommend LinkedIn DM on Contact.
+3. License: use Creative Commons Attribution 4.0 International (`CC BY 4.0`).
+4. Homepage blog cards: use `featured: true` posts only, sliced to three; do not fall back to latest posts.
+5. Homepage featured cards may use images.
+6. Blog curated sections: manually selected by post ID, not tags.
+7. Blog curated section cards: text-only cards with date, title, and intro/description; no images and no tags.
+8. Blog archive / all posts: group by year and show only date plus title.
+9. Archived posts: exclude from homepage, Blog index, tag pages, and RSS; keep direct URLs buildable for now.
+10. `/archive/` page: not part of this release; revisit only if direct-link-only archived posts become hard to manage.
