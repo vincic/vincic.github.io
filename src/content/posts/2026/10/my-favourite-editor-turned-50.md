@@ -4,6 +4,7 @@ description: "I have used Emacs since 1993. Magit, Org-roam and plain text keep 
 pubDate: "2026-10-30"
 author: "sasha"
 featured: true
+heroImage: "/images/emacs-world.jpg"
 tags: ["emacs", "tools", "ai"]
 ---
 
