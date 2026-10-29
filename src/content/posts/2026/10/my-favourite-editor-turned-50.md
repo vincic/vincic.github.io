@@ -1,5 +1,5 @@
 ---
-title: "My favourite editor turned 50"
+title: "Emacs, my favourite editor, turned 50"
 description: "I have used Emacs since 1993. Magit, Org-roam and plain text keep it useful. Now an agent can help me change the editor itself."
 pubDate: "2026-10-30"
 author: "sasha"
