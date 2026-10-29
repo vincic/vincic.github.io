@@ -1,12 +1,12 @@
 ---
 title: "My favourite editor turned 50"
-description: "I have used Emacs since 1983. Magit, Org-roam and plain text keep it useful. Now an agent can help me change the editor itself."
+description: "I have used Emacs since 1993. Magit, Org-roam and plain text keep it useful. Now an agent can help me change the editor itself."
 pubDate: "2026-10-30"
 author: "sasha"
 tags: ["emacs", "tools", "ai"]
 ---
 
-My favourite editor turned 50. I have used it since 1983, which is an uncomfortable amount of history to attach to something I still open to get work done.
+My favourite editor turned 50. I have used it since 1993, which is an uncomfortable amount of history to attach to something I still open to get work done.
 
 [MIT Technology Review has a history of Emacs](https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/), from its beginnings at the MIT AI Lab in 1976. One detail I liked: Guy Steele wanted to agree on a standard set of editing commands because everyone’s customisations made it harder to help each other. He was trying to solve a social problem. A group of programmers had made their tools so personal that using someone else’s had become work. That sounds familiar.
 
